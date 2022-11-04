@@ -1,8 +1,11 @@
-# REACT NFC Sample App
+![PayPal Developer Cover](https://github.com/paypaldev/.github/blob/main/pp-cover.png)
+  <a href="https://twitter.com/paypaldev" target="_blank">
+    <img alt="Twitter: PayPal Developer" src="https://img.shields.io/twitter/follow/paypaldev?style=social" />
+  </a>
 
-## About
+# PayPal React NFC Sample App
 
-This is a simple sample app demostrating the usage of the [Web NFC API](https://w3c.github.io/web-nfc/) and the PayPal Checkout SDK to process the payments.
+This is a simple sample app demostrating the usage of the [Web NFC API](https://w3c.github.io/web-nfc/) and the PayPal Checkout SDK to process the payments. This is not a 
 
 The workflow is as follows: With this app, you set the price of an "item" that contains the NFC tag. With this same app, you can read the price of the item and use the PayPal API to process the payment for that item you are buying.
 
@@ -127,24 +130,20 @@ const onWrite = () => {
 - https://caniuse.com/webnfc
 - https://w3c.github.io/web-nfc/
 
-## Available Scripts
+### Run the project
 
-In the project directory, you can run:
+Run `npm install` to install all the project dependencies then run the project using
+`npm start`.
 
-### `yarn start`
-
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
-### `yarn build`
+## PayPal Developer Community
+The PayPal Developer community helps you build your career, while also improving PayPal products and the developer experience. You’ll be able to contribute code and documentation, meet new people and learn from the open source community.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Website: [developer.paypal.com](https://developer.paypal.com)
+* Twitter: [@paypaldev](https://twitter.com/paypaldev)
+* Github:  [@paypal](https://github.com/paypal)
