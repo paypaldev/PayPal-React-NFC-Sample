@@ -1,5 +1,4 @@
 import React from 'react';
-import './PayPal-Checkout.css'
 import { PayPalButtons } from "@paypal/react-paypal-js";
 
 const PayPalCheckout = ({price}) => {
