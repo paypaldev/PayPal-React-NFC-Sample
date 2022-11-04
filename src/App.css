@@ -15,7 +15,7 @@
 }
 
 .btn {
-  background-color: #1f51ff;
+  background-color: #24387a;
   border: none;
   color: white;
   font-size: 16px;
@@ -29,6 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn--light-blue {
+  background-color: #1493cc;
 }
 
 .App-logo {

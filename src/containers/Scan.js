@@ -1,6 +1,14 @@
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 import Scanner from '../components/Scanner/Scanner';
 import { ActionsContext } from '../contexts/context';
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import PayPalCheckout from '../components/PayPal-Checkout/PayPal-Checkout';
+
+const initialOptions = {
+    "client-id": "YOUR-CLIENT-ID-HERE",
+    currency: "USD",
+    intent: "capture",
+  };
 
 const Scan = () => {
     const [message, setMessage] = useState('');
@@ -57,12 +65,15 @@ const Scan = () => {
 
     return(
         <>
-            {actions.scan === 'scanned' ?  
-            <div>
-                <p>Serial Number: {serialNumber}</p>
-                <p>Message: {message}</p>
-            </div>
-            : <Scanner status={actions.scan}></Scanner> }
+            {actions.scan === 'scanned' ?
+            (<> 
+                <p>Item Price: ${message}</p>
+                <PayPalScriptProvider options={initialOptions}>
+                    <PayPalCheckout price={message}/>
+                </PayPalScriptProvider>
+            </>
+            )
+            : <Scanner/> }
         </>
     );
 };

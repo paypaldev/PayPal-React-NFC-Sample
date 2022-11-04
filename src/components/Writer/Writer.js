@@ -15,7 +15,7 @@ const Writer = ({writeFn}) => {
       <>
         <form onSubmit={onSave}>
             <div className="writer-container">
-                <input type="text" placeholder="Enter Message..." value={message} onChange={(e)=>setMessage(e.target.value)}></input>
+                <input type="number" placeholder="Enter Price..." value={message} onChange={(e)=>setMessage(e.target.value)}></input>
                 <button className="btn" type="submit">
                     <Save/>
                     Save
