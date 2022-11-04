@@ -2,17 +2,17 @@
 
 ## About
 
-This is a simple sample app demostrating the usage of the [Web NFC API](https://w3c.github.io/web-nfc/).
+This is a simple sample app demostrating the usage of the [Web NFC API](https://w3c.github.io/web-nfc/) and the PayPal Checkout SDK to process the payments.
+
+The workflow is as follows: With this app, you set the price of an "item" that contains the NFC tag. With this same app, you can read the price of the item and use the PayPal API to process the payment for that item you are buying.
+
+To learn how to integrate the PayPal SDK follow [this how-to guide](https://dev.to/paypaldeveloper/how-to-add-paypal-checkout-payments-to-your-react-app-53aa) or take a look at our [PayPal Checkout Sample App](https://github.com/paypaldev/PayPal-React-Checkout-Sample).
 
 **To get the Web NFC API working you will need an Android Device with Google Chrome and your web app will need to be hosted using https.**
-
-This is the [sample app](https://react-nfc-90146.web.app/) in action.
 
 ![alt nfc tag](scs.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-If you want to see an Angular app using NFCs look at this video [example](https://twitter.com/manekinekko/status/1424697070015991808) and visit [this repo](https://github.com/manekinekko/puzzle-duo-nfc) by the awesome [Wassim](https://twitter.com/manekinekko). Thanks to him I was introduced to the Web NFC API.
 
 ### WTF is NFC?
 
@@ -28,7 +28,7 @@ You can buy NFC Tags on [Amazon](https://www.amazon.com/gp/product/B0727NYX3B/re
 
 NFCs can have multiple usages, some of the usages are:
 
-- Making contactless payments like Google and Apple Pay
+- Making contactless payments like PayPal, Google, and Apple Pay
 - Opening a door using your badge
 - Opening a link
 - Product control in a warehouse
