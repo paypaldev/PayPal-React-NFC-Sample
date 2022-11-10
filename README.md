@@ -13,7 +13,7 @@ To learn how to integrate the PayPal SDK follow [this how-to guide](https://dev.
 
 **To get the Web NFC API working you will need an Android Device with Google Chrome and your web app will need to be hosted using https.**
 
-![alt nfc tag](scs.png)
+![alt nfc tag](nfcpaypal.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
